@@ -1,0 +1,13 @@
+{
+  "name": "class-directory-62",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "test": "node --test tests/worker.test.mjs tests/gateway.test.mjs",
+    "test:browser": "node tests/browser.test.mjs",
+    "test:vercel-browser": "node tests/browser.test.mjs --vercel",
+    "dev": "node scripts/dev.mjs"
+  }
+}

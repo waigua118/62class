@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "functions": {
+    "api/gateway.js": { "maxDuration": 30 }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/gateway?__route=$1" }
+  ]
+}
